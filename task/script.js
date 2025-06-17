@@ -68,6 +68,7 @@ if (registerForm ) {
     localStorage.setItem("user", JSON.stringify({ name, email, password }));
     showMessage(registerForm, "Registration successful!", false);
     registerForm.reset();
+    window.location.href = "welcome.html";
   });
 }
 
